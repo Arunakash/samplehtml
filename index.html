@@ -10,25 +10,7 @@
 
 <div id="lightning-root">Loading...</div>
 
-<!-- Load Lightning Out JS -->
-<script src="https://inspiration-agility-4910.lightning.force.com/lightning/lightning.out.js"></script>
-
-<script>
-  $Lightning.use(
-    "c:LightningOutApp",   // Aura app (extends ltng:outApp)
-    function () {
-      $Lightning.createComponent(
-        "c:TestAura",       // Aura wrapper
-        {},                 // attributes
-        "lightning-root",   // div id
-        function () {
-          console.log("Lightning component loaded");
-        }
-      );
-    },
-    "https://inspiration-agility-4910.lightning.force.com"
-  );
-</script>
-
+<script type="text/javascript" async="" src="https://inspiration-agility-4910.my.salesforce.com/lightning/lightning.out.latest/index.iife.prod.js"></script> 
+<lightning-out-application components="c-lightningout"></lightning-out-application>
 </body>
 </html>
